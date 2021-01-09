@@ -10,6 +10,21 @@
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
+
+   .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .wrapper > * {
+    padding: 2em;
+  }
+
+  .company-info h3,
+  .company-info ul,
+  .brand {
+    text-align: left;
+  }
 }
 
 // Tablets &mall laptops
@@ -84,5 +99,13 @@
 
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  .boxes {
+    div {
+      font-size: 1rem;
+      border: 1.5px #fff solid;
+      padding: 1rem 2.5rem;
+    }
   }
 }

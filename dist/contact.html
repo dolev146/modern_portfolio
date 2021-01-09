@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Contact Me</title>
     <script src="js/main.js" defer></script>
+    <script src="js/contact.js" defer></script>
 </head>
 
 <body>
@@ -55,8 +56,50 @@
             Contact
             <span class="text-secondary">Me</span>
         </h1>
+        <div class="container">
+            <!-- <h1 class="brand"> <span>Dolev </span> Dublon </h1> -->
+            <div class="wrapper">
+                <div class="company-info">
+                    <!-- <h3>Fill the form and i will contact u as soon as possible</h3> -->
+                    <ul>
+                        <li><i class="fa fa-road"></i> <a target="http://maps.google.com/?q=Modi'in Israel"
+                                href="http://maps.google.com/?q=Modi'in Israel">Modi'in Israel</a> </li>
+                        <li><i class="fa fa-phone"></i> <a href="tel:+972505884960">+972-50-588-4960</a></li>
+                        <li><i class="fa fa-envelope"></i> <a href="mailto:dolev146@gmail.com">dolev146@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <!-- <h3>Contact Me</h3> -->
+                    <form id="contact-form">
+                        <p>
+                            <label for="name">Name</label>
+                            <input type="text" name="name">
+                        </p>
+                        <p>
+                            <label for="company">Company</label>
+                            <input type="text" name="company">
+                        </p>
+                        <p>
+                            <label for="email">Email Address*</label>
+                            <input required type="email" name="email">
+                        </p>
+                        <p>
+                            <label for="phone">Phone Number*</label>
+                            <input required type="text" name="phone">
+                        </p>
+                        <p class="full">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="" cols="30" rows="10"></textarea>
+                        </p>
+                        <p class="full">
+                            <button>Submit</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
         <h2 class="sm-heading">
-            This is how you can reach me...
+           More ways to reach out...
         </h2>
         <div class="boxes">
             <div><a href="mailto:dolev146@gmail.com">
@@ -71,9 +114,11 @@
             </div>
             <div>
                 <span class="text-secondary">Adress:</span>
-              Israel Modi'in
+                <a target="http://maps.google.com/?q=Modi'in Israel"
+                    href="http://maps.google.com/?q=Modi'in Israel">Modi'in Israel</a>
             </div>
         </div>
+    
     </main>
 
     <footer id="main-footer">
