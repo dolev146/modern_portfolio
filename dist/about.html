@@ -11,15 +11,20 @@
     <link rel="stylesheet" href="css/main.css">
     <title>About Me</title>
     <script src="js/main.js" defer></script>
+    <script src="js/Text_Animation.js" defer></script>
 </head>
 
 <body>
+    <a href="work.html" class="see-my-work ">my work</a>
+    <a href="about.html" class="see-my-work see-my-work2">Download MY Resume</a>
+    <a href="contact.html" class="see-my-work see-my-work3  in-about-me-page">contact me</a>
     <header>
         <div class="menu-btn">
             <div class="btn-line"></div>
             <div class="btn-line"></div>
             <div class="btn-line"></div>
         </div>
+
 
         <nav class="menu">
             <div class="menu-branding">
@@ -62,8 +67,8 @@
             <img src="img/portrait.jpg" alt="Dolev Dublon" class="bio-image">
             <div class="bio">
                 <h3 class="text-secondary">Who am i?</h3>
-                <p>I am a software developer based in Israel and I have been building a bunch of websites 
-                   . I help convert a vision and an idea into meaningful and useful
+                <p>I am a software developer based in Israel and I have been building a bunch of websites
+                    . I help convert a vision and an idea into meaningful and useful
                     software products. Having the ability to transform requirements into a useful software. </p>
             </div>
             <div class="job job-1">
@@ -97,10 +102,73 @@
                 <i class="fas fa-code "></i>
             </div>
         </div>
+        <h1 class="skills-header">My Skills</h1>
+        <div class="projects">
+            <div class="skill item">
+                <img class="fit-image" src="./img/skills/react-angular.png" alt="logo-react-angular">
+                <h3>Front End FrameWorks</h3>
+                <p>I use proven design patterns and frameworks to build websites. Visit my projects to see examples :)
+                </p>
+            </div>
+            <div class="skill item">
+                <img class="fit-image" src="./img/skills/node.webp" alt="nodejs logo">
+                <h3>Node.js Backend</h3>
+                <p>In my projects i use Node.js as the backend to proccess the requests and handle the connection
+                    between the database and the client. </p>
+            </div>
+            <div class="skill item">
+                <img class="fit-image" src="./img/skills/mysql.png" alt="">
+                <h3>MySQL Database</h3>
+                <p>Database to store data For every CRUD (create, read, update, delete) application. </p>
+            </div>
+        </div>
     </main>
 
     <footer id="main-footer">
-        Copytight &copy; 2021
+        <div class="icons">
+
+
+            <a href="www.linkedin.com/in/dolevdublon" target="www.linkedin.com/in/dolevdublon" class="footer-link">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://github.com/dolev146" target="https://github.com/dolev146" class="footer-link">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="mailto: dolev146@gmail.com" class="footer-link">
+                <i class="fab fas fa-envelope fa-2x"></i>
+            </a>
+
+            <a href="tel:+972505884960" class="footer-link">
+                <i class="fas fa-phone fa-2x"></i>
+            </a>
+        </div>
+
+
+        <div class="footer-nav icons">
+            <div>
+                <a href="index.html">
+                    Home
+                </a>
+            </div>
+            <div class="current">
+                <a href="about.html">
+                    About Me
+                </a>
+            </div>
+            <div>
+                <a href="work.html">
+                    My Work
+                </a>
+            </div>
+            <div>
+                <a href="contact.html">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+
+
+        <p>Copytight &copy; 2021</p>
     </footer>
 
 
