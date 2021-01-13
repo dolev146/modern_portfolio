@@ -471,6 +471,20 @@ main {
     padding: 0.5rem;
     border-bottom: #03bcf4 5px solid; }
 
+.flex-anchors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; }
+
+.cool-border {
+  border: 2px solid #03bcf4;
+  padding: 10px;
+  color: #edf8fb;
+  border-radius: 99999px;
+  text-transform: uppercase;
+  background: #01212a; }
+
 .skill {
   background: #c3e8f2;
   padding: 0.5rem;

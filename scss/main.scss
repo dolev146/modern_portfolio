@@ -278,6 +278,22 @@ main {
   }
 }
 
+.flex-anchors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cool-border {
+  border: 2px solid $secondary-color;
+  padding: 10px;
+  color: lighten($color: $primary-color, $amount: 80);
+  border-radius: 99999px;
+  text-transform: uppercase;
+  background: darken($color: $secondary-color, $amount: 40);
+}
+
 .skill {
   background: lighten($primary-color, 70);
   padding: 0.5rem;
