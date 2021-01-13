@@ -1,7 +1,22 @@
 // Widescreens
 @include mediaXl {
+  .splide__slide {
+    height: 35vh;
+  }
   .projects {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .wrapper > * {
+    padding: 2em;
+  }
+  .company-info h3,
+  .company-info ul,
+  .brand {
+    text-align: left;
   }
 }
 

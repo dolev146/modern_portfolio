@@ -479,11 +479,15 @@ main {
 
 .cool-border {
   border: 2px solid #03bcf4;
+  filter: hue-rotate(160deg);
   padding: 10px;
   color: #edf8fb;
   border-radius: 99999px;
   text-transform: uppercase;
   background: #01212a; }
+
+.margin-top {
+  margin-top: 100px; }
 
 .skill {
   background: #c3e8f2;
@@ -616,8 +620,19 @@ ul {
     color: #03bcf4; }
 
 @media screen and (min-width: 1171px) {
+  .splide__slide {
+    height: 35vh; }
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr; }
+  .wrapper > * {
+    padding: 2em; }
+  .company-info h3,
+  .company-info ul,
+  .brand {
+    text-align: left; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {

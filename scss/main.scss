@@ -287,11 +287,16 @@ main {
 
 .cool-border {
   border: 2px solid $secondary-color;
+  filter: hue-rotate(160deg);
   padding: 10px;
   color: lighten($color: $primary-color, $amount: 80);
   border-radius: 99999px;
   text-transform: uppercase;
   background: darken($color: $secondary-color, $amount: 40);
+}
+
+.margin-top {
+  margin-top: 100px; 
 }
 
 .skill {
