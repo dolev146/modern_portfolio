@@ -5,43 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../splide.js/splide.min.css">
-    <script src="../splide.js/splide.min.js"></script>
+
     <script src="https://kit.fontawesome.com/07e02e8a2b.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="css/main.css">
-    <title>Welcome To My Portfolio</title>
+    <title>Cryptonite Proj</title>
     <script src="js/main.js" defer></script>
-    <script src="js/splide.js" type="module" defer></script>
 </head>
 
-<body id="bg-img">
-
+<body>
     <a href="work.html" class="see-my-work looping-button"><span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    My work</a>
+        <span></span>
+        <span></span>
+        <span></span>
+        Go Back</a>
     <a href="about.html" class="see-my-work see-my-work2">about me</a>
     <a href="contact.html" class="see-my-work see-my-work3">contact me</a>
     <header>
-
         <div class="menu-btn">
             <div class="btn-line"></div>
             <div class="btn-line"></div>
             <div class="btn-line"></div>
         </div>
 
+
         <nav class="menu">
             <div class="menu-branding">
                 <div class="portrait"></div>
             </div>
             <ul class="menu-nav">
-                <li class="nav-item current">
+                <li class="nav-item ">
                     <a href="index.html" class="nav-link">
                         Home
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item current">
                     <a href="about.html" class="nav-link">
                         About Me
                     </a>
@@ -60,45 +58,56 @@
         </nav>
     </header>
 
-    <main id="home">
-        <h1 class="lg-heading index-name">
-            Dolev
-            <span class="text-secondary">Dublon</span>
+    <main id="about">
+        <h1 class="lg-heading">
+            Crypto
+            <span class="text-secondary">nite</span>
         </h1>
-        <div class="sm-heading margin-bottom-4rem ">
-            <h2 class="inline">I build amazing </h2>
-            <h2 class="text-secondary text-glow inline"> experiences</h2>
-            <a class="inline" href="work.html">
-                <h2 class="inline right-header">View More Projects</h2>
-            </a>
+        <h2 class="sm-heading">
+            tracking virtual currency Built with Vanilla JavaScript
+        </h2>
+        <div class="about-info">
+            <img src="img/skills/bitcoin-logo.png" width="250px" alt="Dolev Dublon" class="bio-image">
+            <div class="bio">
+                <h3 class="text-secondary">About this project</h3>
+                <p>This poject was made with an Api that send me the data about all the currencies. My mission was to
+                    display the data in a nice way for the client to help him track his coin. </p>
+            </div>
         </div>
-        <div class="splide">
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <a href="https://my-api-coins-proct.glitch.me/" target="https://my-api-coins-proct.glitch.me/"
-                        class="splide__slide">
-                        <img src="img/projects/coin-coiny.png">
-                        <p class="not-responsive" >*Not responive</p>
-                    </a>
-                    <a href="https://vacations-dolev.herokuapp.com/" target="https://vacations-dolev.herokuapp.com/"
-                        class="splide__slide">
-                        <img src="img/projects/vacations-react.png">
-                        <p class="not-responsive">*Not responive</p>
-                    </a>
-                    <a href="https://dolev-shufersal.herokuapp.com/" target="https://dolev-shufersal.herokuapp.com/"
-                        class="splide__slide">
-                        <img src="img/projects/dolev-store.png">
-                        <p class="not-responsive">*Not responive</p>
-                    </a>
-                </ul>
-            </div>
-            <div class="splide__progress">
-                <div class="splide__progress__bar">
-                </div>
-            </div>
+        <div>
+            <a href="https://my-api-coins-proct.glitch.me/" target="https://my-api-coins-proct.glitch.me/"
+                class="see-my-work preview">Live
+            </a>
+            <a href="https://glitch.com/edit/#!/my-api-coins-proct"
+                target="https://glitch.com/edit/#!/my-api-coins-proct" class="see-my-work fix-the-size-bug">see code</a>
+
         </div>
 
+        <h1 class="skills-header">Details</h1>
+        <div class="projects">
+            <div class="skill item">
+                <img class="fit-image no-hover-effect" src="./img/skills/jslogo.png" alt="">
+                <h3>Front End languages</h3>
+                <p>I used javascript to manipulate the DOM , and make this website act like a single page application
+                    without no libraries.
+                </p>
+            </div>
+            <div class="skill item">
+                <img class="fit-image no-hover-effect" src="./img/skills/bug.png" alt="bug logo">
+                <h3>Bug solving process</h3>
+                <p>At the beginning of this project I encountered a lot of bugs whether it was in the design of the site
+                    or whether it was
+                    in JavaScriptFit itself. The process of resolving the bugs was empowering. </p>
+            </div>
+            <div class="skill item">
+                <img class="fit-image no-hover-effect" src="./img/skills/light-bulb.png" alt="">
+                <h3>Main Lesson</h3>
+                <p>I contacted the developers of the Chart library i used because it didnt worked in my website and they
+                    gave me a diffrent link to a version that worked on my website.</p>
+            </div>
+        </div>
     </main>
+
     <footer id="main-footer">
         <div class="icons">
 
@@ -120,12 +129,12 @@
 
 
         <div class="footer-nav icons">
-            <div class="current">
+            <div>
                 <a href="index.html">
                     Home
                 </a>
             </div>
-            <div>
+            <div class="current">
                 <a href="about.html">
                     About Me
                 </a>
@@ -145,6 +154,8 @@
 
         <p>Copytight &copy; 2021</p>
     </footer>
+
+
 </body>
 
 </html>

@@ -70,6 +70,21 @@
     display: block;
   }
 
+  .preview {
+    display: inline-block;
+    position: initial;
+    width: 22%;
+    margin-left: -300px;
+    text-align: center;
+  }
+
+  .fix-the-size-bug {
+    position: absolute;
+    right: 500%;
+    margin-left: 300px;
+    top: 212%;
+  }
+
   .menu-nav {
     height: 75vh;
     transform: translate3d(-100%, 0, 0);
@@ -123,12 +138,16 @@
     padding: 2rem;
   }
 
+  .preview {
+    display: none;
+  }
+
   main#home h1 {
     margin-top: 10vh;
   }
 
   .lg-heading {
-    margin-top: 1rem;
+    margin-top: 2.5rem;
     font-size: 5rem;
   }
 

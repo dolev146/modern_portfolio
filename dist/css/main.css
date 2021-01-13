@@ -52,11 +52,25 @@
   .see-my-work:nth-child(4) {
     filter: hue-rotate(270deg); }
 
+.fix-the-size-bug {
+  position: absolute;
+  right: 300px;
+  top: 560px; }
+
+.preview {
+  display: inline-block;
+  position: initial;
+  width: 20%;
+  margin-left: 20%;
+  text-align: center; }
+
 .see-my-work2 {
   position: absolute;
   padding: 10px 30px;
   right: 300px;
   top: 35px; }
+  .see-my-work2.in-work-page {
+    right: 310px; }
 
 .see-my-work3 {
   position: absolute;
@@ -66,6 +80,77 @@
   .see-my-work3.in-about-me-page {
     right: 590px;
     width: 170px; }
+  .see-my-work3.in-work-page-home {
+    right: 500px;
+    width: 130px;
+    text-align: center; }
+
+.looping-button span {
+  position: absolute;
+  display: block; }
+
+.looping-button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03bcf4);
+  animation: loop1 1s linear infinite; }
+
+@keyframes loop1 {
+  0% {
+    left: -100%; }
+  50%,
+  100% {
+    left: 100%; } }
+
+.looping-button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03bcf4);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s; }
+
+@keyframes animate2 {
+  0% {
+    top: -100%; }
+  50%,
+  100% {
+    top: 100%; } }
+
+.looping-button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03bcf4);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s; }
+
+@keyframes animate3 {
+  0% {
+    right: -100%; }
+  50%,
+  100% {
+    right: 100%; } }
+
+.looping-button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03bcf4);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s; }
+
+@keyframes animate4 {
+  0% {
+    bottom: -100%; }
+  50%,
+  100% {
+    bottom: 100%; } }
 
 .menu-btn {
   position: absolute;
@@ -228,6 +313,14 @@ main {
 .inline {
   display: inline; }
 
+.not-responsive {
+  color: white;
+  text-align: center;
+  border-radius: 9999px;
+  background-color: #0e3742;
+  width: 80px;
+  font-size: x-small; }
+
 .text-glow {
   text-transform: uppercase;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0a252d);
@@ -368,6 +461,10 @@ main {
     .projects img:hover {
       opacity: 0.5;
       border-color: #03bcf4;
+      transition: all 0.5s ease-in-out; }
+    .projects img.no-hover-effect:hover {
+      opacity: 1;
+      border-color: #fff;
       transition: all 0.5s ease-out; }
   .projects .job {
     background: #124957;
@@ -382,6 +479,8 @@ main {
   transition: all 0.5s ease-out; }
   .skill:hover {
     box-shadow: 10px 20px 30px #03bcf4; }
+  .skillimg:hover {
+    box-shadow: none; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -549,6 +648,17 @@ ul {
       transform: translate3d(0, 0, 0); }
   .right-header {
     display: block; }
+  .preview {
+    display: inline-block;
+    position: initial;
+    width: 22%;
+    margin-left: -300px;
+    text-align: center; }
+  .fix-the-size-bug {
+    position: absolute;
+    right: 500%;
+    margin-left: 300px;
+    top: 212%; }
   .menu-nav {
     height: 75vh;
     transform: translate3d(-100%, 0, 0);
@@ -577,10 +687,12 @@ ul {
 @media screen and (max-width: 500px) {
   main {
     padding: 2rem; }
+  .preview {
+    display: none; }
   main#home h1 {
     margin-top: 10vh; }
   .lg-heading {
-    margin-top: 1rem;
+    margin-top: 2.5rem;
     font-size: 5rem; }
   .projects {
     grid-template-columns: 1fr; }

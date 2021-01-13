@@ -73,6 +73,15 @@ main {
   display: inline;
 }
 
+.not-responsive {
+  color: lighten($color: $primary-color, $amount: 90);
+  text-align: center;
+  border-radius: 9999px;
+  background-color: $primary-color;
+  width: 80px;
+  font-size: x-small;
+}
+
 .text-glow {
   text-transform: uppercase;
   -webkit-box-reflect: below 1px
@@ -244,15 +253,24 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.7rem;
+
   img {
     width: 100%;
     border: 3px #fff solid;
     &:hover {
       opacity: 0.5;
       border-color: $secondary-color;
-      @include easeOut;
+      transition: all 0.5s ease-in-out;
+    }
+    &.no-hover-effect {
+      &:hover {
+        opacity: 1;
+        border-color: #fff;
+        @include easeOut;
+      }
     }
   }
+
   .job {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
@@ -268,6 +286,9 @@ main {
   @include easeOut;
   &:hover {
     box-shadow: 10px 20px 30px $secondary-color;
+  }
+  &img:hover {
+    box-shadow: none;
   }
 }
 
